@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PBL.css">
+    <title>Fitness Activities</title>
+    <style>
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 20px; 
+            justify-content: center; 
+        }
+        [class*="col-"] {
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .col-5 { 
+            width: 100%;
+            display: flex;
+            gap: 20px; 
+        }
+        .col-6 { 
+            width: 50%; 
+        }
+        
+        .section {
+            background: var(--section-bg);
+            color: var(--section-text);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 10px;
+            width: 100%;
+        }
+        .section img {
+            border-radius: 15px;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .text {
+            width: 60%;
+        }
+        h2 {
+            color: var(--primary-color);
+            width: 100%;
+        }
+        h5 {
+            color: var(--primary-color);
+        }
+       
+        @media only screen and (max-width: 768px){
+            
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .col-5, .col-6 {
+                width: 100%;
+            }
+            .col-5 {
+                flex-direction: column;
+            }
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section img, .text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<header>     
+    <nav>
+        <img src="Images/Website logo.png" width="100px" alt="logo">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggler">&#9776</label>
+        <ul class="nav-bar"> 
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="About us.html">About Us</a></li>                         
+            <li class="dropdown"><a href="Study.html">Study</a>        
+                <ul class="dropdown-content">
+                    <li><a href="Book.html">Book Recomendations</a></li>
+                    <li><a href="Time.html">Time management</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="fitness.html">Health</a>
+                <ul class="dropdown-content">
+                    <li><a href="Yoga.html">Yoga</a></li>
+                    <li><a href="E.html">Energetic activities</a></li>
+                    <li><a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="Relax1.html">Relax</a>
+                <ul class="dropdown-content">
+                    <li><a href="Meditation.html">Meditation</a></li>
+                    <li><a href="music.html">Music</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <h2>Yoga for Relaxation</h2>
+        <div class="row">
+            <div class="col-5">
+                <div class="col-6 section">
+                    <img src="Images/morning_yoga.jpg" alt="Morning Yoga">
+                    <div class="text">
+                        <h5>Morning Yoga</h5>
+                        <p>Start your day with gentle yoga stretches to energize your body and mind.</p>
+                    </div>
+                </div>
+                <div class="col-6 section">
+                    <img src="Images/evening_relaxation.jpg" alt="Evening Relaxation">
+                    <div class="text">
+                        <h5>Evening Relaxation</h5>
+                        <p>Wind down in the evening with relaxing poses to ease tension and improve sleep.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Energetic Activities</h2>
+        <div class="row">
+            <div class="col-5">
+                <div class="col-6 section">
+                    <img src="Images/running.jpg" alt="Running">
+                    <div class="text">
+                        <h5>Running</h5>
+                        <p>Boost your cardiovascular health and stamina with regular running exercises.</p>
+                    </div>
+                </div>
+                <div class="col-6 section">
+                    <img src="Images/cycling.jpg" alt="Cycling">
+                    <div class="text">
+                        <h5>Cycling</h5>
+                        <p>Get your heart pumping and muscles toned with outdoor cycling activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                <li><a href="https://www.geeksforgeeks.org/web-design/">Web Design by geeksforgeeks</a></li>
+                <li><a href="http://https://websitesetup.org/website-planning/best-designed-websites/">Web Design by websitesetup</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
+</body>
+</html>

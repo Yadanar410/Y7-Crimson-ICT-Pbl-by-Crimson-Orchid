@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PBL.css">
+    <title>Meditation Tips</title>
+    <style>
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #ff6f61;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .benefits {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .tips {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .tip-box {
+            background-color: #ffebcd;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: calc(30% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .tip-box:hover {
+            transform: scale(1.05);
+        }
+        @media only screen and (max-width: 768px) {
+            .col-3, .col-4 { width: 50%; }
+            .tip-box {
+                width: calc(45% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .tip-box {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <header>     
+        <nav>
+            <img src="Images/Website logo.png" width="100px" alt="logo">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggler">&#9776</label>
+            <ul class="nav-bar"> 
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="About us.html">About Us</a></li>                         
+                <li class="dropdown"><a href="Study.html">Study</a>        
+                    <ul class="dropdown-content">
+                        <li><a href="Book.html">Book Recomendations</a></li>
+                        <li><a href="Time.html">Time management</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="fitness.html">Health</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Yoga.html">Yoga</a></li>
+                        <li><a href="E.html">Energetic activities</a></li>
+                        <li><a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="Relax1.html">Relax</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Meditation.html">Meditation</a></li>
+                        <li><a href="music.html">Music</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+ 
+<div class="container">
+    <h1>Meditation Tips</h1>
+    <p>Find your inner peace and tranquility</p>
+    <section class="benefits">
+        <h2>Benefits of Meditation</h2>
+        <ul>
+            <li>Reduces stress and anxiety</li>
+            <li>Improves focus and concentration</li>
+            <li>Enhances self-awareness</li>
+            <li>Promotes emotional health</li>
+            <li>May reduce age-related memory loss</li>
+            <li>Improves sleep quality</li>
+            <li>Increases feelings of well-being</li>
+        </ul>
+    </section>
+ 
+    <section>
+        <h2>Tips for Effective Meditation</h2>
+        <div class="tips">
+            <div class="tip-box">
+                <h3>1. Find a Quiet Space</h3>
+                <p>Choose a peaceful environment where you won't be disturbed.</p>
+            </div>
+            <div class="tip-box">
+                <h3>2. Set a Timer</h3>
+                <p>Start with just 5-10 minutes and gradually increase the time.</p>
+            </div>
+            <div class="tip-box">
+                <h3>3. Focus on Your Breath</h3>
+                <p>Pay attention to your breathing to help clear your mind.</p>
+            </div>
+            <div class="tip-box">
+                <h3>4. Be Kind to Yourself</h3>
+                <p>It's normal for thoughts to wander; gently bring your focus back.</p>
+            </div>
+            <div class="tip-box">
+                <h3>5. Use Guided Meditations</h3>
+                <p>Consider using apps or videos for guidance, especially as a beginner.</p>
+            </div>
+            <div class="tip-box">
+                <h3>6. Create a Routine</h3>
+                <p>Try to meditate at the same time each day to build a habit.</p>
+            </div>
+        </div>
+    </section>
+<div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="Images/Website logo.png" alt=" Logo" width="180px">
+        <p>Self-Care Central</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+            <li><a href="About us.html">About Us</a></li>
+            <li><a href="Study.html">Study</a></li>
+            <li><a href="Health.html">Health</a></li>
+            <li><a href="Relax1.html">Relax</a></li>
+            <li><a href="https://www.geeksforgeeks.org/web-design/">Web Design by geeksforgeeks</a></li>
+            <li><a href="http://https://websitesetup.org/website-planning/best-designed-websites/">Web Design by websitesetup</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+</footer>
+</html>
+</body>

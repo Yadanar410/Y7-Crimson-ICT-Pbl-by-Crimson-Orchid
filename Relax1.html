@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PBL.css">
+    <title>Relax Page</title>
+    <style>
+      
+        .hero {
+            background: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            color: #ff8080;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            color: #ff8080;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin: 10px 0 0;
+        }
+        .benefits {
+            width: 30%;
+           flex-wrap: wrap;
+            text-align: justify;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            color: #ff8080;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>     
+        <nav>
+            <img src="Images/Website logo.png" width="100px" alt="logo">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggler">&#9776</label>
+            <ul class="nav-bar"> 
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="About us.html">About Us</a></li>                         
+                <li class="dropdown"><a href="Study.html">Study</a>        
+                    <ul class="dropdown-content">
+                        <li><a href="Book.html">Book Recomendations</a></li>
+                        <li><a href="Time.html">Time management</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="fitness.html">Health</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Yoga.html">Yoga</a></li>
+                        <li><a href="E.html">Energetic activities</a></li>
+                        <li><a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="Relax1.html">Relax</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Meditation.html">Meditation</a></li>
+                        <li><a href="music.html">Music</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Welcome to the Relax Zone</h1>
+        <p>Relax your mind, soothe your soul, and recharge your energy</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Meditation</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Guided Meditation</h3>
+                <p>Find peace with our guided meditation sessions.</p>
+            </div>
+            <div class="card">
+                <h3>Breathing Exercises</h3>
+                <p>Improve focus and calm with mindful breathing techniques.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Music</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Relaxing Tunes</h3>
+                <p>Enjoy handpicked melodies to relax your mind.</p>
+            </div>
+            <div class="card">
+                <h3>Nature Sounds</h3>
+                <p>Immerse yourself in the calming sounds of nature.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="benefits">
+        <h2>Benefits of Meditation</h2>
+        <ul>
+            <li>Find a Quiet Space</li>
+            <li>Set a Timer</li>
+            <li>Focus on Your Breath</li>
+            <li>Be Kind to Yourself</li>
+            <li>Use Guided Meditations</li>
+            <li>Create a Routiney</li>
+           
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                <li><a href="https://www.geeksforgeeks.org/web-design/">Web Design by geeksforgeeks</a></li>
+                <li><a href="http://https://websitesetup.org/website-planning/best-designed-websites/">Web Design by websitesetup</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
+</body>
+</html>

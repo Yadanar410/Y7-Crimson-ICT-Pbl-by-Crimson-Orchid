@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PBL.css">
+    <title>About Us</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 10px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+ 
+        }
+        .logo-container {
+            display: flex;
+            align-items: center; 
+        }
+        .logo-container img {
+            border-radius: 15px;
+            width: 100%;
+            height: 100px;
+            object-fit:contain;
+        }
+        .P{
+            margin: 0px auto;
+            text-align: center;
+            width: 300px;
+            height: 250px;
+            padding: 30px;
+            border-radius: 5px solid;
+            
+        }
+        h1 {
+            color: #ffc3c3;
+        }
+        h2 {
+            color:  #ff8080;
+            border-bottom: 2px solid  #ff8080;
+            padding-bottom: 5px;
+        }
+        .Mission {
+            margin: 15px 0;
+            color: #ff8080;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .col-1 { width: 8.33%; }
+        .col-2 { width: 16.66%; }
+        .col-3 { width: 25%; }
+        .col-4 { width: 33.33%; }
+        .col-5 { width: 41.66%; }
+        .col-6 { width: 50%; }
+        .col-7 { width: 58.33%; }
+        .col-8 { width: 66.66%; }
+        .col-9 { width: 75%; }
+        .col-10 { width: 83.33%; }
+        .col-11 { width: 91.66%; }
+        .col-12 { width: 100%; }
+        .member-slider {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .member-slide {
+            text-align: center;
+            width: 30%;
+        
+        }
+        .member-slide img {
+            width: 50%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .col-4 {
+                width: 50%;
+            }
+            .member-slide img{
+                width: 100px;
+            }
+        }
+        @media (max-width: 480px) {
+            .col-4 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<header>     
+    <nav>
+        <img src="Images/Website logo.png" width="100px" alt="logo">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggler">&#9776</label>
+        <ul class="nav-bar"> 
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="About us.html">About Us</a></li>                         
+            <li class="dropdown"><a href="Study.html">Study</a>        
+                <ul class="dropdown-content">
+                    <li><a href="Book.html">Book Recomendations</a></li>
+                    <li><a href="Time.html">Time management</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="fitness.html">Health</a>
+                <ul class="dropdown-content">
+                    <li><a href="Yoga.html">Yoga</a></li>
+                    <li><a href="E.html">Energetic activities</a></li>
+                    <li><a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="Relax1.html">Relax</a>
+                <ul class="dropdown-content">
+                    <li><a href="Meditation.html">Meditation</a></li>
+                    <li><a href="music.html">Music</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <h2>Our Mission</h2>
+        <div class="logo-container">
+            <a href="https://edusn.co.uk/"><img src="Images/EDUSNexlogo.png" alt="Logo"></a>
+            <p class="Mission">Hello Everyone! We are Year 7 students crimson students from EDUSN Digital School. This website supports teenagers in building healthy habits, managing stress, and improving their mental and physical well-beingWe hope this website helps your self-care.</p>
+        </div>
+    </div>
+    <div class="member-slider">
+        <div class="member-slide col-4">
+            <h3>Pyae Yadanar Phyo</h3>
+            <img src="Images/Pyae Yadanar Phyo.jpg" alt="Member">
+        </div>
+        <div class="member-slide col-4">
+            <h3>Poe Thansin Phyu</h3>
+            <img src="Images/Poe.png" alt="Member">
+        </div>
+        <div class="member-slide col-4">
+            <h3>Phoo Pyae Thaw Zin</h3>
+            <img src="Images/image (2).jpg" alt="Member">
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                <li><a href="https://www.geeksforgeeks.org/web-design/">Web Design by geeksforgeeks</a></li>
+                <li><a href="http://https://websitesetup.org/website-planning/best-designed-websites/">Web Design by websitesetup</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
+</body>
+</html>
+ 

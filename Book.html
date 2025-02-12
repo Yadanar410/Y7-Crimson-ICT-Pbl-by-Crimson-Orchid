@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="PBL.css">
+    <title>Book Recommendation Library</title>
+    <style>
+        .intro {
+            text-align: center;
+            padding: 15px;
+            color: #fff;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+        }
+        .row {
+            width: 100%;
+            overflow: hidden;
+        }
+        img {
+            border-radius: 15px;
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+ 
+        .col-1 { width: 8.33%; }
+        .col-2 { width: 16.66%; }
+        .col-3 { width: 25%; }
+        .col-4 { width: 33.33%; }
+        .col-5 { width: 41.66%; }
+        .col-6 { width: 50%; }
+        .col-7 { width: 58.33%; }
+        .col-8 { width: 66.66%; }
+        .col-9 { width: 75%; }
+        .col-10 { width: 83.33%; }
+        .col-11 { width: 91.66%; }
+        .col-12 { width: 100%; }
+ 
+        .book-card {
+            background-color: white;
+            color: #ff8080;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            cursor: pointer;
+        }
+ 
+        .book-card:hover {
+            background-color: #ff8080;
+            color: #fff;
+
+        }
+        @media only screen and (max-width: 1024px) {
+            .col-3 { width: 33.33%; }
+            .col-4 { width: 50%; }
+        }
+ 
+        @media only screen and (max-width: 768px) {
+            .col-3, .col-4 { width: 50%; }
+            
+        }
+ 
+        @media only screen and (max-width: 480px) {
+            .col-3, .col-4 { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>     
+        <nav>
+            <img src="Images/Website logo.png" width="100px" alt="logo">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggler">&#9776</label>
+            <ul class="nav-bar"> 
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="About us.html">About Us</a></li>                         
+                <li class="dropdown"><a href="Study.html">Study</a>        
+                    <ul class="dropdown-content">
+                        <li><a href="Book.html">Book Recomendations</a></li>
+                        <li><a href="Time.html">Time management</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="fitness.html">Health</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Yoga.html">Yoga</a></li>
+                        <li><a href="E.html">Energetic activities</a></li>
+                        <li><a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="Relax1.html">Relax</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Meditation.html">Meditation</a></li>
+                        <li><a href="music.html">Music</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="intro">
+        <p>Welcome to Your Learning Haven! Hey there, curious minds! Whether you’re here
+            to dive into a gripping story, explore new ideas, or find the perfect book for your next adventure,
+            this space is just for you. Feel free to browse, explore, and click around.
+            Happy exploring! Your Library Team.</p>
+    </section>
+ 
+    <section class="row">
+        <div class="col-3">
+            <div class="book-card">A girl guide to murder 1
+            <a href="PDF file/A girl guide to murder.pdf"><img src="Images/A Good Girl's Guide to Murder by Holly Jackson _ Goodreads.png"
+                 alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">A girl guide to murder 2
+            <a href="PDF file/A good girl guide to murder 2.pdf"><img src="Images/Good Girl, Bad Blood by Holly Jackson _ Goodreads.png"
+                alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">A girl guide to murder 3
+            <a href="PDF file/A good girl guide to murder 3.pdf"
+            ><img src="Images/As Good Girl's Guide to Murder by Holly Jackson _  Goodreads.png" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">Harry Potter series
+            <a href="PDF file/Harry Potter series.pdf"><img src="Images/H.png" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">The Hobbit
+            <a href="PDF file/The Hobbit.pdf"><img src="Images/image (16).png" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card"> Loon Susan Vande Griek
+            <a href="PDF file/Loon_-_Susan_Vande_Griek.pdf"><img src="Images/Loon.png" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">Scientifica Hist
+            <a href="PDF file/Scientifica_Historica_-_Brian_Clegg.pdf"><img src="Images/S.jpg" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">Ivory_Apples
+            <a href="PDF file/Ivory_Apples_-_Lisa_Goldstein.pdf"><img src="Images/IV.png" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">"Little Women 2023 reissue
+            <a href="PDF file/Little_Women_2023_reissue_-_Louisa_May_Alcott.pdf"><img src="Images/Little.jpg" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">Surrounded by Idiots
+            <a href="PDF file/Surrounded_by_Idiots_-_Thomas_Erikson.pdf"><img src="images/S.png" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">Paddle to the Sea
+            <a href="PDF file/Surrounded_by_Idiots_-_Thomas_Erikson.pdf"><img src="Images/P.png" alt=""></a></div>
+        </div>
+        <div class="col-3">
+            <div class="book-card">Shatter me series
+            <a href="PDF file/Shatter me series.pdf"><img src="Images/Shatter.png" alt=""></a></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                <li><a href="https://www.geeksforgeeks.org/web-design/">Web Design by geeksforgeeks</a></li>
+                <li><a href="http://https://websitesetup.org/website-planning/best-designed-websites/">Web Design by websitesetup</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
+</body>
+</html>

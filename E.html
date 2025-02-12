@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PBL.css">
+    <title>Fun Activities Page</title>
+    <style>
+
+        h1 {
+            color: #ff8080;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .col {
+            box-sizing: border-box;
+            padding: 15px;
+            width: 25%;
+        }
+        .activity-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 20px;
+        }
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .activity-card h2 {
+            color: #6b5b95;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .activity-card p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .activity-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        @media only screen and (max-width: 768px){
+        }
+        @media (max-width: 768px) {
+            .col {
+                width: 50%;
+            }
+        }
+ 
+        @media (max-width: 576px) {
+            .col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>     
+        <nav>
+            <img src="Images/Website logo.png" width="100px" alt="logo">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggler">&#9776</label>
+            <ul class="nav-bar"> 
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="About us.html">About Us</a></li>                         
+                <li class="dropdown"><a href="Study.html">Study</a>        
+                    <ul class="dropdown-content">
+                        <li><a href="Book.html">Book Recomendations</a></li>
+                        <li><a href="Time.html">Time management</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="fitness.html">Health</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Yoga.html">Yoga</a></li>
+                        <li><a href="E.html">Energetic activities</a></li>
+                        <li><a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="Relax1.html">Relax</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Meditation.html">Meditation</a></li>
+                        <li><a href="music.html">Music</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Fun Activities to Try!</h1>
+ 
+    <div class="container">
+        <div class="col">
+            <div class="activity-card">
+                <img src="Images/drawing.png" alt="Drawing and Doodling">
+                <h2>Draw or Doodle</h2>
+                <p>Grab some paper and pencils, and start drawing!
+                    You can sketch your favorite characters,
+                    animals, or even make your own comic strip.</p>
+            </div>
+        </div>
+ 
+        <div class="col">
+            <div class="activity-card">
+                <img src="Images/sport.png" alt="Playing Sports">
+                <h2>Play a Sport</h2>
+                <p>Get outside and play football, basketball,
+                    or even just run around with friends.
+                     It's a great way to stay active and have fun!</p>
+            </div>
+        </div>
+ 
+        <div class="col">
+            <div class="activity-card">
+                <img src="Images/reading.png" alt="Reading a Book">
+                <h2>Read a Book</h2>
+                <p>Find a cozy spot and dive into a good book.
+                    You can explore new worlds,
+                    solve mysteries, or learn something new!</p>
+            </div>
+        </div>
+ 
+        <div class="col">
+            <div class="activity-card">
+                <img src="Images/walking.png" alt="Science Experiment">
+                <h2>Go on a fun walk</h2>
+                <p>Walking with your family, friends, or even by yourself is
+                    very fun and healthy for your body and mindset.</p>
+            </div>
+        </div>
+ 
+        <div class="col">
+            <div class="activity-card">
+                <img src="Images/board games.png" alt="Board Games">
+                <h2>Play Board Games</h2>
+                <p>Gather your family or friends and play board games like Monopoly,
+                     Scrabble, or Uno. It's a great way to have fun together!</p>
+            </div>
+        </div>
+ 
+        <div class="col">
+            <div class="activity-card">
+                <img src="Images/crocheting .png" alt="Learning Something New">
+                <h2>Learn Something New</h2>
+                <p>Try learning a new skill, like cooking, crocheting,
+                    or playing a musical instrument. It's fun and you'll feel proud of yourself!</p>
+            </div>
+        </div>
+ 
+        <div class="col">
+            <div class="activity-card">
+                <img src="Images/Gardening.png" alt="Gardening">
+                <h2>Start Gardening</h2>
+                <p>Plant some flowers, herbs, or vegetables in your garden or in pots.
+                    It's relaxing and rewarding to watch them grow!</p>
+            </div>
+        </div>
+ 
+        <div class="col">
+            <div class="activity-card">
+                <img src="Images/puzzel.png" alt="Puzzles">
+                <h2>Solve Puzzles</h2>
+                <p>Challenge your brain with jigsaw puzzles, crosswords, or Sudoku.
+                    It's a great way to improve your problem-solving skills!</p>
+            </div>
+        </div>
+    </div>
+ 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                <li><a href="https://www.geeksforgeeks.org/web-design/">Web Design by geeksforgeeks</a></li>
+                <li><a href="http://https://websitesetup.org/website-planning/best-designed-websites/">Web Design by websitesetup</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
+</body>
+</html>

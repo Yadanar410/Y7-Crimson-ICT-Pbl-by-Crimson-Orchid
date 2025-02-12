@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PBL.css">
+    <title>Home Page</title>
+    <style>
+        .section {
+            color: #ff8080;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section p, .section ul {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+            color: #ffffff;
+            background-color: #ff8080;
+        }
+        h3{
+            color: #ffc3c3;
+        }
+        .section ul li {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .images img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+        }
+        .table-container {
+            margin: 30px 30px;
+            overflow-x: auto;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #ff8080;
+            color: white;
+        }
+        table tr {
+            background-color: #ffffff;
+            color: #ff8080;
+        }
+       
+        
+        
+           </style>
+</head>
+<body>
+    <header>     
+        <nav>
+            <img src="Images/Website logo.png" width="100px" alt="logo">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggler">&#9776</label>
+            <ul class="nav-bar"> 
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="About us.html">About Us</a></li>                         
+                <li class="dropdown"><a href="Study.html">Study</a>        
+                    <ul class="dropdown-content">
+                        <li><a href="Book.html">Book Recomendations</a></li>
+                        <li><a href="Time.html">Time management</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="fitness.html">Health</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Yoga.html">Yoga</a></li>
+                        <li><a href="E.html">Energetic activities</a></li>
+                        <li><a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="Relax1.html">Relax</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Meditation.html">Meditation</a></li>
+                        <li><a href="music.html">Music</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <div class="section" id="home">
+                <h1>Welcome to Our Website</h1>
+                <p>Your one-stop solution for Study, Fitness, and Relaxation</p>
+                <p>We aim to help you balance your life with tips and resources for studying effectively, staying fit, and finding ways to relax.</p>
+            </div>
+        
+            <div class="section images">
+                <h2>Explore Our Features</h2>
+                <img src="Images/Study.png" alt="Study Resources">
+                <img src="Images/sport.png" alt="Fitness Activities">
+                <img src="Images/Fitness.png" alt="Relaxation Techniques">
+            </div>
+        </div>
+        <div class="section">
+            <ul>
+                <h3> Driving Question</h3>
+                <p>How can we design an innovative platform that fosters well-being, empowers individuals, and supports growth within a community to drive lasting positive change for the future? 
+                </p>
+                <h3> Eg</h3>
+                <p>How can we design a self-care platform that supports teenagers in building healthy habits, managing stress, and improving their mental and physical well-being?</p>
+            </ul>
+        </div>
+    </div>
+        <div class="table-container">
+            <h2>Comparison Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Benefits</th>
+                        <th>Examples</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Study</td>
+                        <td>Improves focus and efficiency</td>
+                        <td>Time management tips, Book recommendations</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Boosts physical health</td>
+                        <td>Yoga, Energetic activities</td>
+                    </tr>
+                    <tr>
+                        <td>Relax</td>
+                        <td>Reduces stress</td>
+                        <td>Meditation, Music therapy</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                <li><a href="https://www.geeksforgeeks.org/web-design/">Web Design by geeksforgeeks</a></li>
+                <li><a href="http://https://websitesetup.org/website-planning/best-designed-websites/">Web Design by websitesetup</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
+    
+    </body>
+    </html>
+    

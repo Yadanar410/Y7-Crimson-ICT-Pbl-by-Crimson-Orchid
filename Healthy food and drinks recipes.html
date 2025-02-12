@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PBL.css">
+    <title>Healthy Food Benefits</title>
+    <style>
+        h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .benefit {
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border: 2px solid #ff8080;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .benefit:hover {
+            background-color: #ffc3c3;
+            transform: scale(1.02);
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #ff8080;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .tip {
+            margin: 20px;
+            background-color: #ff8080;
+            padding: 10px;
+            border-left: 5px solid #ffffff;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #ffffff;
+            margin: 5px 0;
+        }
+        p {
+            margin: 5px 0;
+        }
+       
+    </style>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>     
+        <nav>
+            <img src="Images/Website logo.png" width="100px" alt="logo">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggler">&#9776</label>
+            <ul class="nav-bar"> 
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="About us.html">About Us</a></li>                         
+                <li class="dropdown"><a href="Study.html">Study</a>        
+                    <ul class="dropdown-content">
+                        <li><a href="Book.html">Book Recomendations</a></li>
+                        <li><a href="Time.html">Time management</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="fitness.html">Health</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Yoga.html">Yoga</a></li>
+                        <li><a href="E.html">Energetic activities</a></li>
+                        <li><a href="Healthy food and drinks recipes.html">Healthy food and drinks recipes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="Relax1.html">Relax</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Meditation.html">Meditation</a></li>
+                        <li><a href="music.html">Music</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="tip">
+        <h3>Welcome to our collection of healthy food and drink recipes! Whether you're looking for a nourishing meal, a refreshing drink, or a guilt-free snack, we've got you covered. Our recipes are packed with fresh, wholesome ingredients to keep you feeling great and full of energy. Enjoy exploring delicious flavors while making healthier choices!</h3>
+    </div>
+ 
+    <div class="benefit" onclick="toggleDetails('benefit1')">
+        <strong>Improves Mood:</strong> A balanced diet can enhance mental well-being and reduce stress.
+    </div>
+    <div class="details" id="benefit1">
+        <h3>Recipe:</h3>
+        <p>Quinoa Salad with Avocado and Cherry Tomatoes</p>
+        <h3>Advantages:</h3>
+        <p>Rich in nutrients and healthy fats.</p>
+        <h3>Disadvantages:</h3>
+        <p>Can be expensive if using organic ingredients.</p>
+        <h3>Cooking Method:</h3>
+        <p>Boil quinoa, mix with diced avocado and halved cherry tomatoes, and dress with olive oil and lemon juice.</p>
+    </div>
+    
+    <div class="benefit" onclick="toggleDetails('benefit2')">
+        <strong>Boosts Immune System:</strong> Consuming fruits and vegetables can strengthen the immune system.
+    </div>
+    <div class="details" id="benefit2">
+        <h3>Recipe:</h3>
+        <p>Berry Smoothie with Spinach</p>
+        <h3>Advantages:</h3>
+        <p>High in antioxidants and vitamins.</p>
+        <h3>Disadvantages:</h3>
+        <p>May not be filling enough for a meal replacement.</p>
+        <h3>Cooking Method:</h3>
+        <p>Blend spinach, mixed berries, and yogurt until smooth.</p>
+    </div>
+    
+    <div class="benefit" onclick="toggleDetails('benefit3')">
+        <strong>Aids Digestion:</strong> High-fiber foods promote healthy digestion and prevent constipation.
+    </div>
+    <div class="details" id="benefit3">
+        <h3>Recipe:</h3>
+        <p>Chia Seed Pudding</p>
+        <h3>Advantages:</h3>
+        <p>Rich in fiber and omega-3 fatty acids.</p>
+        <h3>Disadvantages:</h3>
+        <p>Requires soaking time for chia seeds.</p>
+        <h3>Cooking Method:</h3>
+        <p>Mix chia seeds with almond milk and let sit overnight in the fridge.</p>
+    </div>
+    
+    <div class="benefit" onclick="toggleDetails('benefit4')">
+        <strong>Supports Weight Management:</strong> Healthy foods can help maintain a healthy weight.
+    </div>
+    <div class="details" id="benefit4">
+        <h3>Recipe:</h3>
+        <p>Grilled Chicken Salad with Mixed Greens</p>
+        <h3>Advantages:</h3>
+        <p>High in protein, low in calories, and packed with vitamins and minerals.</p>
+        <h3>Disadvantages:</h3>
+        <p>Can be bland if not seasoned properly; may require additional ingredients for flavor.</p>
+        <h3>Cooking Method:</h3>
+        <p>Grill chicken breast until cooked through, slice it, and serve over a bed of mixed greens with cherry tomatoes, cucumbers, and a light vinaigrette dressing.</p>
+    </div>
+    <div class="benefit" onclick="toggleDetails('benefit5')">
+        <strong>High in Nutrients:</strong> Packed with vitamins, antioxidants, and healthy fats, this salad supports overall health. Ginger aids digestion and has anti-inflammatory benefits, while tomatoes offer essential vitamins A, C, and K.
+    </div>
+    <div class="details" id="benefit5">
+        <h3>Recipe:</h3>
+        <p>Burmese Ginger Salad with Tomatoes and Peanuts</p>
+        <h3>Advantages:</h3>
+        <p>Rich in antioxidants and anti-inflammatory properties, especially from ginger. Low in calories, great for weight management, and the peanuts provide protein to keep you full longer.</p>
+        <h3>Disadvantages:</h3>
+        <p>.Can be spicy depending on the chili used and may not be very filling on its own, so best paired with rice or protein.</p>
+        <h3>Cooking Method:</h3>
+        <p>Mix chopped tomatoes and ginger. Whisk fish sauce, lime juice, chili, sesame oil, and salt, then toss with the veggies. Top with peanuts and cilantro.</p>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/Website logo.png" alt=" Logo" width="180px">
+            <p>Self-Care Central</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Health.html">Health</a></li>
+                <li><a href="Relax1.html">Relax</a></li>
+                <li><a href="https://www.bbcgoodfood.com/recipes/collection/quick-and-healthy-recipes">Healthy Food Benefits recipes by bbcgoodfood</a></li>
+                <li><a href="https://www.geeksforgeeks.org/web-design/">Web Design by geeksforgeeks</a></li>
+                <li><a href="http://https://websitesetup.org/website-planning/best-designed-websites/">Web Design by websitesetup</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© Copyright 2025 www.Self-Care Central.com. All rights reserved. Developed by Robotic.</p>
+    </footer>
+</body>
